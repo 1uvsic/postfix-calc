@@ -1,10 +1,13 @@
-#include "postfixcalc.h"
+//#include "postfixcalc.h"
+#include "mainCalc.hpp"
 #include <QtWidgets/QApplication>
+
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    postfixcalc w;
+
+    QDlgCalc w;
     w.show();
     return a.exec();
 }
