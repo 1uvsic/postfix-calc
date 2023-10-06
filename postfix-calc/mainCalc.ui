@@ -243,7 +243,7 @@ border-radius: 30px;</string>
 }</string>
     </property>
     <property name="text">
-     <string>C</string>
+     <string>CE</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnDivide">

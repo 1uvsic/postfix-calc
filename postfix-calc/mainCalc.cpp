@@ -78,91 +78,111 @@ void QDlgCalc::on_btnAllClear_clicked(bool checked)
 
 void QDlgCalc::on_btnClear_clicked(bool checked)
 {
-    ui.txtInput->clear();
-    //스택으로 pop
+    QString currentTxt = ui.txtInput->text();
+    currentTxt.chop(1);
+    ui.txtInput->setText(currentTxt);
 }
 
 void QDlgCalc::on_btnAdd_clicked(bool checked)
 {
-    ui.txtInput->setText("×");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "+");
 }
 
 void QDlgCalc::on_btnMinus_clicked(bool checked)
 {
-    ui.txtInput->setText("-");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "-");
 }
 
 void QDlgCalc::on_btnMultiply_clicked(bool checked)
 {
-    ui.txtInput->setText("×");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "×");
 }
 
 void QDlgCalc::on_btnDivide_clicked(bool checked)
 {
-    ui.txtInput->setText("÷");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "÷");
 }
 
 void QDlgCalc::on_btnLeftParen_clicked(bool checked)
 {
-    ui.txtInput->setText("(");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "(");
 }
 
 void QDlgCalc::on_btnRightParen_clicked(bool checked)
 {
-    ui.txtInput->setText(")");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + ")");
 }
 
 void QDlgCalc::on_btnEqual_clicked(bool checked)
 {
-    ui.txtInput->setText("=");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "=");
+
+    ui.txtResult->setText("0"); //수정하기
 }
 
 void QDlgCalc::on_btnZero_clicked(bool checked)
 {
-    ui.txtInput->setText("0");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "0");
 }
 
 void QDlgCalc::on_btnOne_clicked(bool checked)
 {
-    ui.txtInput->setText("1");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "1");
 }
 
 void QDlgCalc::on_btnTwo_clicked(bool checked)
 {
-    ui.txtInput->setText("2");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "2");
 }
 
 void QDlgCalc::on_btnThree_clicked(bool checked)
 {
-    ui.txtInput->setText("3");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "3");
 }
 
 void QDlgCalc::on_btnFour_clicked(bool checked)
 {
-    ui.txtInput->setText("4");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "4");
 }
 
 void QDlgCalc::on_btnFive_clicked(bool checked)
 {
-    ui.txtInput->setText("5");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "5");
 }
 
 void QDlgCalc::on_btnSix_clicked(bool checked)
 {
-    ui.txtInput->setText("6");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "6");
 }
 
 void QDlgCalc::on_btnSeven_clicked(bool checked)
 {
-    ui.txtInput->setText("7");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "7");
 }
 
 void QDlgCalc::on_btnEight_clicked(bool checked)
 {
-    ui.txtInput->setText("8");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "8");
 }
 
 void QDlgCalc::on_btnNine_clicked(bool checked)
 {
-    ui.txtInput->setText("9");
+    QString currentTxt = ui.txtInput->text();
+    ui.txtInput->setText(currentTxt + "9");
 }
